@@ -22,6 +22,8 @@
 //     JOHN DOE!
 // Note: the 'a' vs. 'an'
 
+
+// need to redo
 const J = "Give me a J!";
 console.log(J);
 
