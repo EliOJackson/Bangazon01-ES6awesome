@@ -24,46 +24,59 @@
 
 
 // need to redo
-const J = "Give me a J!";
-console.log(J);
+// const J = "Give me a J!";
+// console.log(J);
 
-let O = "Give me an O!";
-console.log(O);
+// let O = "Give me an O!";
+// console.log(O);
 
-let H = "Give me an H!";
-let hObj = {
-    H
-};
-console.log(hObj.H);
+// let H = "Give me an H!";
+// let hObj = {
+//     H
+// };
+// console.log(hObj.H);
 
-const nObj = {
-    cheer: "Give me an N!"
+// const nObj = {
+//     cheer: "Give me an N!"
+// }
+// const { cheer: N } = nObj;
+
+// console.log(N);
+
+// const D = "Give me a D!";
+// const dCheer = D => D;
+
+// console.log(dCheer(D));
+
+// const Give = ["Give"];
+// const Me = ["me"];
+// const an = ["an"];
+// const Obang = ["O!"];
+
+// const oCheer = [...Give, ...Me, ...an, ...Obang];
+// console.log(oCheer[0], oCheer[1], oCheer[2], oCheer[3]);
+
+// const eMap = new Map();
+// const eCheer = "String!"
+
+// eMap.set(eCheer, "Give me an E!");
+// console.log(eMap.get(eCheer));
+
+// const finalCheer = "What does that spell?";
+// const name= "JOHN DOE";
+
+// console.log(`${finalCheer}
+// ${name}`);
+
+const name = process.argv[2].toUpperCase();
+const letterArr = [...name];
+
+function cheer(letterArr) {
+    console.log('nameArr',letterArr);
+    letterArr.forEach(letter => {
+        console.log(`Give me a ${letter}!`)
+    });
+    console.log(`What does that spell? \n${name}!`)
 }
-const { cheer: N } = nObj;
 
-console.log(N);
-
-const D = "Give me a D!";
-const dCheer = D => D;
-
-console.log(dCheer(D));
-
-const Give = ["Give"];
-const Me = ["me"];
-const an = ["an"];
-const Obang = ["O!"];
-
-const oCheer = [...Give, ...Me, ...an, ...Obang];
-console.log(oCheer[0], oCheer[1], oCheer[2], oCheer[3]);
-
-const eMap = new Map();
-const eCheer = "String!"
-
-eMap.set(eCheer, "Give me an E!");
-console.log(eMap.get(eCheer));
-
-const finalCheer = "What does that spell?";
-const name= "JOHN DOE";
-
-console.log(`${finalCheer}
-${name}`);
+cheer(letterArr);
